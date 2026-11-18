@@ -18,11 +18,11 @@
 <p class="intro">本政策說明此個人比價工具如何處理 Google 帳戶資料。更新日期為 2026 年 11 月 18 日。</p>
 <section>
   <h2>Google 帳戶存取</h2>
-  <p>程式使用 Google Drive 的 <code>drive.file</code> 權限，建立報表資料夾、儲存 CSV，並讀取本應用程式可存取的歷史報表來計算價差。也使用 Gmail 的 <code>gmail.send</code> 權限，從帳戶擁有者的 Gmail 寄送每日報告給本人。程式無權讀取收件匣。</p>
+  <p>程式使用 Google Drive 的 <code>drive.file</code> 權限，建立報表資料夾、儲存 CSV，並讀取本應用程式可存取的歷史報表來計算價差。也使用 Gmail 的 <code>gmail.send</code> 權限，從帳戶擁有者的 Gmail 寄送每日報告給本人及本人指定的收件人。程式無權讀取收件匣。</p>
 </section>
 <section>
   <h2>儲存與傳輸</h2>
-  <p>報表保存在帳戶擁有者的 Google Drive，郵件保存在 Gmail，直到擁有者刪除。執行紀錄留在私人 GitHub 儲存庫，依 GitHub 設定的保存期限保留。Google 授權憑證存放在該私人儲存庫的 GitHub Actions Secrets。</p>
+  <p>報表保存在帳戶擁有者的 Google Drive，郵件保存在 Gmail，直到擁有者刪除。每封報告可附上本次航班與歷史價差的 HTML，供指定收件人查看。執行紀錄留在私人 GitHub 儲存庫，依 GitHub 設定的保存期限保留。Google 授權憑證與額外收件人地址存放在該私人儲存庫的 GitHub Actions Secrets。</p>
   <p>航班查詢會把出發地、目的地、日期和旅客數等查詢條件送給比價來源。比價來源不會收到 Google 授權憑證、Drive 報表或 Gmail 內容。Google 使用者資料僅用於寄送、存檔和歷史比價，沒有用於廣告、買賣或模型訓練。這個公開網站不提供登入，也沒有表單或自訂分析追蹤程式。</p>
   <p>使用及傳輸自 Google API 取得的資訊時，遵循 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>，包括其中的 Limited Use 要求。</p>
 </section>
